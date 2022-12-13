@@ -1,7 +1,7 @@
 body {
     font-family: Arial, Helvetica, sans-serif;
     text-align: center;
-    background-color: aquamarine;
+    background-color: darkgrey;
 }
 
 #board{
@@ -15,13 +15,27 @@ body {
     display: flex;
     flex-wrap: wrap;
 }
+#header {
+    height: 100px;
+    width: 640px;
+
+    margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.headerTile {
+    height: 70px;
+    width: 70px;
+    margin: 10px;
+}
 
 .tile {
     height: 70px;
     width: 70px;
     margin: 5px;
 
-    background-color: aquamarine;
+    background-color: darkgrey;
     border-radius: 50%;
     border: 5px solid navy
 
@@ -29,8 +43,18 @@ body {
 
 .red-piece {
     background-color: red;
+    border-radius: 50%;
+    border: 5px solid maroon;
 }
 
 .yellow-piece {
     background-color: yellow;
+    border-radius: 50%;
+    border: 5px solid goldenrod;
+}
+
+button {
+    position: absolute; 
+    top: 20px; 
+    left: 30px 
 }
